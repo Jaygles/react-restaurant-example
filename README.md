@@ -5,3 +5,5 @@ Example of how a carrot cake bar might present themselves online
 This uses React along with Redux to manage the state.
 
 CSS is being written manually for each component and container using flex-box
+
+Author <b>Jacob Sullivan</b> &copy; 2018
