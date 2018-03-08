@@ -1,4 +1,4 @@
-# Restaurant page made from create-react-app
+# Responsive Restaurant multi-page app made from create-react-app
 
 Example of how a carrot cake bar might present themselves online
 
