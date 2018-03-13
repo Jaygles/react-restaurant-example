@@ -1,14 +1,11 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
-import {  } from '../Actions/index';
-import { bindActionCreators } from 'redux';
+// import {  } from '../Actions/index';
+// import { bindActionCreators } from 'redux';
 
 import './Footer.css';
 
 class Footer extends Component {
-  constructor(props) {
-    super(props);
-  }
 
   render() {
     return(
