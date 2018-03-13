@@ -1,12 +1,10 @@
 import React from 'react';
 
-function MenuItem() {
-  const { items } = this.props;
-  console.log(this);
-  return items.map(item => (
-    <li key={item.name}>
+function MenuItem(props) {
+  return props.items.map(item => (
+    <li className="menu-item" key={item.name}>
       {item.name}
-      <span>{item.price}</span>
+      <span onClick={() => props.addToOrder(item)}>{item.price / 100} +</span>
     </li>
   ));
 }

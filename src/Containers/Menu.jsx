@@ -3,15 +3,16 @@ import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
 import * as actionCreators from '../Actions/index';
 import MenuItem from '../Components/Menu/MenuItem';
+import Order from '../Components/Order/Order';
 
 class Menu extends Component {
   renderMenu = items => {
     if (items !== null) {
-      Object.keys(items).map((key, i) => {
+      return Object.keys(items).map(key => {
         return (
           <div key={key} className="menu-section">
-            Hello
-            {/* <MenuItem key={key} items={items[key]} /> */}
+            <br />
+            <MenuItem addToOrder={this.props.addToOrder} key={key} items={items[key]} />
           </div>
         );
       });
@@ -19,64 +20,14 @@ class Menu extends Component {
       return null;
     }
   };
-  renderApps = apps => {
-    if (apps !== null) {
-      return (
-        <div className="menu-section">
-          {apps.map(item => {
-            return <MenuItem item={item} />;
-          })}
-        </div>
-      );
-    } else {
-      return null;
-    }
-  };
-  renderMains = mains => {
-    if (mains !== null) {
-      return (
-        <div className="menu-section">
-          {mains.map(item => {
-            return <MenuItem item={item} />;
-          })}
-        </div>
-      );
-    } else {
-      return null;
-    }
-  };
-  renderDeserts = deserts => {
-    if (deserts !== null) {
-      return (
-        <div className="menu-section">
-          {deserts.map(item => {
-            return <MenuItem item={item} />;
-          })}
-        </div>
-      );
-    } else {
-      return null;
-    }
-  };
-  renderDrinks = drinks => {
-    if (drinks !== null) {
-      return (
-        <div className="menu-section">
-          {drinks.map(item => {
-            return <MenuItem item={item} />;
-          })}
-        </div>
-      );
-    } else {
-      return null;
-    }
-  };
-
   render() {
     return (
       <div className="menu">
         <p>Menu</p>
-        {this.renderMenu(this.props.menu || null)}
+        {this.renderMenu(this.props.menu)}
+        <div className="order-section">
+          <Order order={this.props.order} removeFromOrder={this.props.removeFromOrder} />
+        </div>
       </div>
     );
   }
@@ -84,6 +35,7 @@ class Menu extends Component {
 function mapStateToProps(state) {
   return {
     menu: state.menu,
+    order: state.order,
   };
 }
 function mapDispatchToProps(dispatch) {
