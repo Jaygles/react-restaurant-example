@@ -5,8 +5,8 @@ function Home() {
   return (
     <div className="home">
       <p className="home-title">Carrot</p>
-      <p className="home-title">
-        Cake
+      <div className="home-title">
+        <p className="home-title">Cake</p>
         <img
           className="test-img"
           alt="Pic of one of our carrot cakes"
@@ -16,16 +16,18 @@ function Home() {
           <span className="side-title">Bar&</span>
           <span className="side-title">Grill</span>
         </div>
-      </p>
+      </div>
       <div className="test-row" />
-      <div className="profile-row">
-        <img className="profile-img" alt="Our head chef" src="assets/img/chef.jpg" />
+      <div className="profile-intro">
+        <div className="line-div">
+          <span className="sexy-line" />
+        </div>
         <div className="profile-info">
-          <h2>We come from a long line of Carrot Cake makers</h2>
-          <p>
-            From our founder Alfonso Carroway IV to our current head chef Alfonso Carrow VII, the
+          <h1 className="profile-info-header">A long line of Carrot Cake makers</h1>
+          <p className="profile-info-paragraph">
+            From our founder Alfonso Carroway IV to our current head chef Alfonso Carroway VII, the
             art of carrot cake makery has been passed down in detail. Come down to our location at
-            33rd and Bob Billings and experience something you couldn't imagine!
+            33rd and Bob Billings and experience something you could not imagine!
           </p>
         </div>
       </div>

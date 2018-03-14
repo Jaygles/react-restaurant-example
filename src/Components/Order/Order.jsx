@@ -3,18 +3,20 @@ import { formatPrice } from '../../helpers';
 
 class Order extends Component {
   calculateTotal = order => {
+    if (order[0] === undefined) {
+      return 0;
+    }
     let total = 0;
     order.forEach(order => (total += order.price * order.count));
-    console.log(total);
     return total;
   };
   render() {
     const { order, removeFromOrder } = this.props;
-    const tax = order[0] !== undefined ? this.calculateTotal(order) * 0.09 : 0;
-    console.log(order);
+    const taxRate = 0.09;
+    const tax = order[0] !== undefined ? this.calculateTotal(order) * taxRate : 0;
     return (
       <div className="order-section">
-        {order[0] ? <p>Order</p> : null}
+        <p>Order</p>
         {order.map((item, i) => (
           <li className="menu-item" key={`${item.name}${i}`}>
             {item.count}x {item.name}
@@ -23,17 +25,15 @@ class Order extends Component {
             </span>
           </li>
         ))}
-        {order[0] !== undefined ? (
-          <div>
-            <li className="menu-item">
-              Tax:<span>{formatPrice(tax)}&nbsp;&nbsp;&nbsp;</span>
-            </li>
-            <li className="menu-item">
-              <br />
-              Total:<span>{formatPrice(this.calculateTotal(order) + tax)}&nbsp;&nbsp;&nbsp;</span>
-            </li>
-          </div>
-        ) : null}
+        <div>
+          <li className="menu-item">
+            Tax:<span>{formatPrice(tax)}&nbsp;&nbsp;&nbsp;</span>
+          </li>
+          <li className="menu-item">
+            <br />
+            Total:<span>{formatPrice(this.calculateTotal(order) + tax)}&nbsp;&nbsp;&nbsp;</span>
+          </li>
+        </div>
       </div>
     );
   }
