@@ -10,9 +10,26 @@
   width: 100%;
   padding: 0;
   margin: 0;
+  display: inline;
   text-align: left;
   font-size: 20vw;
+  font-weight: 600;
   line-height: 90%;
+  text-shadow: 1px 0px 1px #cb6928, 0px 1px 1px #cb6928, 2px 1px 1px #cb6928,
+    1px 2px 1px #cb6928, 3px 2px 1px #cb6928, 2px 3px 1px #cb6928;
+}
+
+.side-title-wrap {
+  height: 5vw;
+  float: right;
+  display: flex;
+  flex-direction: column;
+}
+
+.side-title {
+  height: 5vw;
+  font-size: 5vw;
+  text-shadow: 1px 0px 1px #ccc, 0px 1px 1px #ccc;
 }
 
 .test-row {
@@ -20,8 +37,7 @@
 }
 
 .test-img {
-  height: 18vw;
-  float: right;
+  height: 3.5vw;
 }
 
 .profile-row {

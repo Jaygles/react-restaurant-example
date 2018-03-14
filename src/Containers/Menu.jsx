@@ -26,7 +26,6 @@ class Menu extends Component {
         <p>Menu</p>
         {this.renderMenu(this.props.menu)}
         <br />
-        <p>Order</p>
         <Order order={this.props.order} removeFromOrder={this.props.removeFromOrder} />
       </div>
     );
