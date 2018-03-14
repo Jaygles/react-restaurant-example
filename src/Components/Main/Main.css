@@ -1,5 +1,5 @@
 main {
-  min-height: 500px;
+  min-height: calc(100vh - 100px);
   min-width: 100%;
   max-width: 100%;
   display: flex;
@@ -10,6 +10,7 @@ main {
 
 .menu {
   width: 50%;
+  margin-top: 50px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -17,11 +18,11 @@ main {
 }
 
 .menu-section {
-  width: 100%;
+  width: 80%;
 }
 
 .order-section {
-  width: 50%;
+  width: 80%;
 }
 
 .menu-item {
@@ -33,4 +34,11 @@ main {
 
 .menu-item span {
   cursor: pointer;
+}
+
+span.no_selection {
+  -webkit-user-select: none; /* webkit (safari, chrome) browsers */
+  -moz-user-select: none; /* mozilla browsers */
+  -khtml-user-select: none; /* webkit (konqueror) browsers */
+  -ms-user-select: none; /* IE10+ */
 }
