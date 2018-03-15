@@ -24,7 +24,7 @@ class Menu extends Component {
   render() {
     return (
       <div className="menu">
-        <p>Menu</p>
+        <h1 className="menu-heading">Our Menu</h1>
         {this.renderMenu(this.props.menu)}
         <br />
         <Order order={this.props.order} removeFromOrder={this.props.removeFromOrder} />
