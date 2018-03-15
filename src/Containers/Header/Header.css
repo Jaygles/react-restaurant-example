@@ -41,5 +41,11 @@ h2 {
 }
 
 .nav-btn:not(:last-child) {
-  margin-right: 15px;
+  margin-right: 1vw;
+}
+
+@media screen and (max-width: 900px) {
+  header {
+    margin-bottom: 50px;
+  }
 }

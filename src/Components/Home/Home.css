@@ -92,7 +92,7 @@
 }
 
 .profile-info {
-  height: 45vw;
+  height: 35vw;
   width: 70%;
   text-align: center;
 }
@@ -126,7 +126,11 @@
 }
 
 .chef-bio {
-  width: 80%;
+  width: 85%;
   font-size: 2.5vw;
-  font-weight: thinner;
+  font-weight: lighter;
+  letter-spacing: 0.05em;
+  text-shadow: 1px 0px 1px rgba(204, 204, 204, 0.437),
+    0px 1px 1px rgba(204, 204, 204, 0.437);
+  line-height: 1.25;
 }
