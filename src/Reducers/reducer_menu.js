@@ -1,28 +1,28 @@
 export default function (state = null, action) {
   const menu = {
     appetiser: [
-      { name: 'App One', price: 599 },
-      { name: 'App Two', price: 499 },
-      { name: 'App Three', price: 699 },
-      { name: 'App Four', price: 699 },
+      { name: 'Carrot Rillettes', price: 599 },
+      { name: 'Hummus Cake', price: 499 },
+      { name: 'Sweetmeat Brie with Carrot Sauce', price: 699 },
+      { name: 'Artichoke Dip', price: 699 },
     ],
     main: [
-      { name: 'Main One', price: 1599 },
-      { name: 'Main Two', price: 999 },
-      { name: 'Main Three', price: 899 },
-      { name: 'Main Four', price: 1099 },
+      { name: 'Pub Style Carrot Burgers', price: 1599 },
+      { name: 'Allspice Pork Chops with a Cream Cheese Frosting', price: 999 },
+      { name: 'Bourbon Pecan Chicken', price: 899 },
+      { name: 'Carrot Glazed Mahi Mahi', price: 1099 },
     ],
     desert: [
-      { name: 'Desert One', price: 499 },
-      { name: 'Desert Two', price: 599 },
-      { name: 'Desert Three', price: 599 },
-      { name: 'Desert Four', price: 899 },
+      { name: 'Citrus Carrot Cheesecake', price: 499 },
+      { name: 'Carrot Cake', price: 599 },
+      { name: 'Carrot Tiramisu', price: 599 },
+      { name: 'Cake of Carrot', price: 899 },
     ],
     drink: [
-      { name: 'Drink One', price: 399 },
-      { name: 'Drink Two', price: 299 },
-      { name: 'Drink Three', price: 199 },
-      { name: 'Drink Four', price: 499 },
+      { name: 'Carrot Juice', price: 399 },
+      { name: 'Carrot Soda', price: 299 },
+      { name: 'Carrot Tea', price: 199 },
+      { name: 'Hot Carrot', price: 499 },
     ],
   };
 

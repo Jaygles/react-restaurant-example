@@ -27,7 +27,7 @@ function Home() {
           <p className="profile-info-paragraph">
             From our founder Alfonso Carroway IV to our current head chef Alfonso Carroway VII, the
             art of carrot cake makery has been passed down in detail. Come down to our location at
-            33rd and Bob Billings and experience something you could not imagine!
+            Kasold and Bob Billings and experience something you could not imagine!
           </p>
         </div>
       </div>
