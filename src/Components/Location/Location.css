@@ -7,6 +7,7 @@
 }
 
 .location-heading {
+  font-size: 2.5vw;
   text-shadow: 1px 0px 1px rgba(204, 204, 204, 0.425),
     0px 1px 1px rgba(204, 204, 204, 0.425);
 }
@@ -20,7 +21,7 @@
 }
 
 .map-info {
-  height: 45vw;
+  height: 40vw;
   width: 45vw;
   display: flex;
   flex-direction: column;
@@ -36,8 +37,9 @@
 }
 
 .map-desc {
-  height: 40vw;
+  height: 36vw;
   width: 90%;
+  line-height: 1.2;
   text-shadow: 1px 0px 1px rgba(204, 204, 204, 0.425),
     0px 1px 1px rgba(204, 204, 204, 0.425);
 }

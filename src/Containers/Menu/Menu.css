@@ -21,6 +21,10 @@ main {
   line-height: 1.35;
 }
 
+.menu-heading {
+  font-size: calc(22px + 1vw);
+}
+
 .menu p {
   margin: 10px 0;
 }

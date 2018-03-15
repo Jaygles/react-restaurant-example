@@ -3,12 +3,14 @@ footer {
   min-width: 100%;
   margin-top: 20px;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
   background: black;
 }
 
-footer p {
-  margin-top: 25px;
+.footer-logo {
+  margin-left: 20px;
+  height: 32px;
+  width: 32px;
 }
