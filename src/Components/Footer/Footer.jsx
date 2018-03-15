@@ -1,33 +1,12 @@
-import React, { Component } from 'react';
-import { connect } from 'react-redux';
-// import {  } from '../Actions/index';
-// import { bindActionCreators } from 'redux';
-
+import React from 'react';
 import './Footer.css';
 
-class Footer extends Component {
-
-  render() {
-    return(
-      <footer>
-        <div>
-          <p>&copy; Jacob Sullivan 2017</p>
-        </div>
-      </footer>
-    )
-  }
+function Footer() {
+  return (
+    <footer>
+      <p>&copy; Jacob Sullivan 2017</p>
+    </footer>
+  );
 }
 
-function mapStateToProps(state) {
-  return {
-
-  }
-}
-
-function mapDispatchToProps(dispatch) {
-  return {
-
-  }
-}
-
-export default connect(mapStateToProps, mapDispatchToProps)(Footer);
+export default Footer;

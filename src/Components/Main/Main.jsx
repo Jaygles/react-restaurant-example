@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
-import { loadMenu } from '../../Actions/index';
 import { bindActionCreators } from 'redux';
-import Menu from '../../Containers/Menu';
+import { loadMenu } from '../../Actions/index';
+import Menu from '../../Containers/Menu/Menu';
 import Home from '../Home/Home';
 import Location from '../Location/Location';
 import './Main.css';

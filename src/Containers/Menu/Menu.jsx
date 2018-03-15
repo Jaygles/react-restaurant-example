@@ -1,9 +1,10 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
-import * as actionCreators from '../Actions/index';
-import MenuItem from '../Components/Menu/MenuItem';
-import Order from '../Components/Order/Order';
+import * as actionCreators from '../../Actions/index';
+import MenuItem from '../../Components/Menu/MenuItem';
+import Order from '../../Components/Order/Order';
+import './Menu.css';
 
 class Menu extends Component {
   renderMenu = items => {
