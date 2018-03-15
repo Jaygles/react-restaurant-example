@@ -27,7 +27,7 @@ class Order extends Component {
         ))}
         <div>
           <li className="menu-item">
-            Tax:<span>{formatPrice(tax)}&nbsp;&nbsp;&nbsp;</span>
+            Tax ({taxRate * 100}%):<span>{formatPrice(tax)}&nbsp;&nbsp;&nbsp;</span>
           </li>
           <li className="menu-item">
             <br />
