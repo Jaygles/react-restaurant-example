@@ -9,6 +9,10 @@ footer {
   background: black;
 }
 
+.footer-link {
+  color: #f1f7fc;
+}
+
 .footer-logo {
   margin-left: 20px;
   height: 32px;
