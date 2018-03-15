@@ -1,0 +1,45 @@
+header {
+  height: 30px;
+  min-width: 100%;
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-end;
+  background: repeating-linear-gradient(
+    45deg,
+    orange,
+    orange 15px,
+    black 15px,
+    black 40px
+  );
+}
+
+h2 {
+  margin: 0;
+}
+
+.nav-btn-wrap {
+  position: relative;
+  top: 45px;
+  margin-right: 15px;
+  padding: 6px 20px;
+}
+
+.nav-btn {
+  height: 33px;
+  width: auto;
+  border: 0;
+  font-size: 20px;
+  cursor: pointer;
+  background: none;
+  color: white;
+}
+
+.nav-btn:focus {
+  outline: 0;
+}
+
+.nav-btn:not(:last-child) {
+  margin-right: 15px;
+}

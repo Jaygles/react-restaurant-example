@@ -9,11 +9,16 @@ class Header extends Component {
     const { activePage } = this.props.activePage;
     return (
       <header>
-        <h2>Our Restaurant</h2>
-        <div>
-          <button onClick={() => activePage('Home')}>Home</button>
-          <button onClick={() => activePage('Menu')}>Menu</button>
-          <button onClick={() => activePage('Location')}>Location</button>
+        <div className="nav-btn-wrap">
+          <button className="nav-btn" onClick={() => activePage('Home')}>
+            Home
+          </button>
+          <button className="nav-btn" onClick={() => activePage('Menu')}>
+            Menu
+          </button>
+          <button className="nav-btn" onClick={() => activePage('Location')}>
+            Location
+          </button>
         </div>
       </header>
     );

@@ -15,12 +15,14 @@
   font-size: 20vw;
   font-weight: 600;
   line-height: 90%;
-  text-shadow: 1px 0px 1px #cb6928, 0px 1px 1px #cb6928, 2px 1px 1px #cb6928,
-    1px 2px 1px #cb6928, 3px 2px 1px #cb6928, 2px 3px 1px #cb6928;
+  text-shadow: 1px 0px 1px rgba(255, 166, 0, 0.438),
+    0px 1px 1px rgba(255, 166, 0, 0.438), 2px 1px 1px rgba(255, 166, 0, 0.438),
+    1px 2px 1px rgba(255, 166, 0, 0.438), 3px 2px 1px rgba(255, 166, 0, 0.438),
+    2px 3px 1px rgba(255, 166, 0, 0.438);
 }
 
 .side-title-wrap {
-  height: 5vw;
+  margin-top: -10px;
   float: right;
   display: flex;
   flex-direction: column;
@@ -28,7 +30,8 @@
 
 .side-title {
   height: 5vw;
-  font-size: 5vw;
+  margin-bottom: 12px;
+  font-size: 7vw;
   text-shadow: 1px 0px 1px #ccc, 0px 1px 1px #ccc;
 }
 
@@ -69,10 +72,10 @@
   flex-direction: column;
   align-items: center;
   justify-content: space-around;
-  font-family: "Merienda", cursive;
+  font-family: "Playball", cursive;
   font-size: 2.3vw;
-  text-shadow: 1px 0px 1px rgba(204, 204, 204, 0.637),
-    0px 1px 1px rgba(204, 204, 204, 0.637);
+  text-shadow: 1px 0px 1px rgba(204, 204, 204, 0.437),
+    0px 1px 1px rgba(204, 204, 204, 0.437);
 }
 
 .profile-info-header {
