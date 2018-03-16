@@ -63,6 +63,10 @@ span.no_selection {
   overflow: hidden;
 }
 
+.section li {
+  border-bottom: 1px dotted rgba(255, 255, 255, 0.712);
+}
+
 .section .menu-item-desc {
   height: 0;
   transition: all 0.5s ease-in;

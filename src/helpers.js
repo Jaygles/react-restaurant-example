@@ -4,3 +4,7 @@ export function formatPrice(cents) {
     currency: 'USD',
   });
 }
+
+export function uppAndPlu(string) {
+  return `${string.charAt(0).toUpperCase() + string.slice(1)}s`;
+}

@@ -13,7 +13,12 @@ class Menu extends Component {
         return (
           <div key={key} className="menu-section">
             <br />
-            <MenuGroup addToOrder={this.props.addToOrder} key={key} items={items[key]} />
+            <MenuGroup
+              addToOrder={this.props.addToOrder}
+              index={key}
+              key={key}
+              items={items[key]}
+            />
           </div>
         );
       });
