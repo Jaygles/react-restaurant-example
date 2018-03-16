@@ -9,8 +9,8 @@ main {
 }
 
 .menu {
-  width: 50%;
-  max-width: 800px;
+  width: 70%;
+  max-width: 1000px;
   padding: 20px 5px;
   margin-top: 50px;
   display: flex;
@@ -26,7 +26,7 @@ main {
 }
 
 .menu p {
-  margin: 10px 0;
+  margin: 3px 0;
 }
 
 .menu-section {
@@ -49,8 +49,42 @@ main {
 }
 
 span.no_selection {
-  -webkit-user-select: none; /* webkit (safari, chrome) browsers */
-  -moz-user-select: none; /* mozilla browsers */
-  -khtml-user-select: none; /* webkit (konqueror) browsers */
-  -ms-user-select: none; /* IE10+ */
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -khtml-user-select: none;
+  -ms-user-select: none;
+}
+
+.menu-item-opener {
+  cursor: pointer;
+}
+
+.section {
+  overflow: hidden;
+}
+
+.section .menu-item-desc {
+  height: 0;
+  transition: all 0.5s ease-in;
+}
+
+.section.open .menu-item-desc {
+  height: 15vw;
+}
+
+.menu-item-desc-wrap {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.menu-img {
+  width: 20vw;
+  margin-top: 1vw;
+}
+
+p.menu-desc {
+  width: 40vw;
+  max-width: 570px;
+  text-align: center;
 }
