@@ -59,6 +59,10 @@ main {
   color: rgba(62, 151, 62, 1);
 }
 
+.no_selection.remove-clicked {
+  color: rgb(231, 34, 34);
+}
+
 span.no_selection {
   -webkit-user-select: none;
   -moz-user-select: none;

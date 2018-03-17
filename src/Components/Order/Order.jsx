@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import OrderItem from './OrderItem';
 import { formatPrice } from '../../helpers';
 
 class Order extends Component {
@@ -18,12 +19,7 @@ class Order extends Component {
       <div className="order-section">
         <p>Order</p>
         {order.map((item, i) => (
-          <li className="menu-item" key={`${item.name}${i}`}>
-            {item.count}x {item.name}
-            <span className="no_selection" onClick={() => removeFromOrder(item)}>
-              {formatPrice(item.price * item.count)} &times;
-            </span>
-          </li>
+          <OrderItem key={i} item={item} removeFromOrder={removeFromOrder} />
         ))}
         <div>
           <li className="menu-item">
