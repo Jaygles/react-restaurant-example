@@ -6,7 +6,7 @@ const Map = compose(
   withProps({
     googleMapURL:
       'https://maps.googleapis.com/maps/api/js?key=AIzaSyBgeANVbyfV6MnQ1Eksb7AcCyLy4afKQjA&v=3.exp&libraries=geometry,drawing,places',
-    loadingElement: <div style={{ width: '29%', height: '100%' }}>Loading...</div>,
+    loadingElement: <div className="map-loading">Loading...</div>,
     containerElement: <div style={{ width: '100%', height: '40vw' }} />,
     mapElement: <div style={{ height: '100%' }} />,
   }),

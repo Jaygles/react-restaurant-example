@@ -30,10 +30,11 @@ h2 {
   height: 33px;
   width: auto;
   border: 0;
-  font-size: 20px;
+  font-size: 24px;
   cursor: pointer;
   background: none;
   color: white;
+  font-family: "Cormorant Garamond", serif;
 }
 
 .nav-btn:focus {
