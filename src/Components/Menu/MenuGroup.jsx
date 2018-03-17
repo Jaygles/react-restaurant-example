@@ -6,7 +6,7 @@ function MenuGroup(props) {
   const { items, addToOrder, index } = props;
   return (
     <div>
-      <h3>{uppAndPlu(index)}</h3>
+      <h3 className="menu-group-heading">{uppAndPlu(index)}</h3>
       {items.map(item => <MenuItem key={item.name} item={item} addToOrder={addToOrder} />)}
     </div>
   );

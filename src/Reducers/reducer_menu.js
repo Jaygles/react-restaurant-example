@@ -59,7 +59,7 @@ export default function (state = null, action) {
           'Mahi Mahi is not native to Kansas. We\'ve sent our cousin Vinny to go and get some from across the way. The carrots however are locally sourced.',
       },
     ],
-    desert: [
+    dessert: [
       {
         name: 'Citrus Carrot Cheesecake',
         price: 499,

@@ -8,7 +8,7 @@ function Location() {
       <h1 className="location-heading">Location</h1>
       <div className="map-section">
         <div className="map-info">
-          <h2 className="map-info-heading">A rich history</h2>
+          <h2 className="map-info-heading">A Rich History</h2>
           <div className="map-desc">
             <p className="map-desc-p">
               Our founder Alphonso Carroway IV set our store up in the middle of the Bob Billings
@@ -24,7 +24,9 @@ function Location() {
             </p>
           </div>
         </div>
-        <Map isMarkerShown />
+        <div className="map-wrap">
+          <Map isMarkerShown />
+        </div>
       </div>
     </div>
   );
