@@ -12,18 +12,18 @@ class Main extends Component {
     this.props.loadMenu.loadMenu();
   }
 
-  activePage(pageChoice) {
+  activePage = pageChoice => {
     switch (pageChoice) {
-    case 'Home':
-      return <Home />;
-    case 'Menu':
-      return <Menu />;
-    case 'Location':
-      return <Location />;
-    default:
-      return <Home />;
+      case 'Home':
+        return <Home />;
+      case 'Menu':
+        return <Menu />;
+      case 'Location':
+        return <Location />;
+      default:
+        return <Home />;
     }
-  }
+  };
 
   render() {
     return <main>{this.activePage(this.props.main)}</main>;

@@ -6,11 +6,14 @@ class OrderItem extends Component {
     orderClass: 'no_selection',
   };
   handleRemoveFromOrderClick = item => {
+    // If item isn't last do the animation
+    if (item.count > 1) {
+      this.setState({ orderClass: 'no_selection remove-clicked' });
+      setTimeout(() => {
+        this.setState({ orderClass: 'no_selection' });
+      }, 65);
+    }
     this.props.removeFromOrder(item);
-    this.setState({ orderClass: 'no_selection remove-clicked' });
-    setTimeout(() => {
-      this.setState({ orderClass: 'no_selection' });
-    }, 65);
   };
   render() {
     const { item, removeFromOrder } = this.props;
