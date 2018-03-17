@@ -82,7 +82,7 @@ i {
   margin-left: 5px;
   margin-bottom: 2px;
   top: 0;
-  transition: 250ms all ease-in;
+  /* transition: 250ms all ease-in; */
 }
 
 .right {
@@ -100,11 +100,13 @@ i {
   top: 3px;
   transform: rotate(-135deg);
   -webkit-transform: rotate(-135deg);
+  transition: 275ms all ease-in;
 }
 
 .down {
   transform: rotate(45deg);
   -webkit-transform: rotate(45deg);
+  transition: 250ms all ease-out;
 }
 
 .section {
