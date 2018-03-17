@@ -5,17 +5,20 @@ class MenuItem extends Component {
   state = {
     open: false,
     sectionClass: 'section',
+    arrowClass: 'arrow down',
     orderClass: 'no_selection',
   };
   handleItemClick = () => {
     if (this.state.open) {
       this.setState({
         open: false,
+        arrowClass: 'arrow down',
         sectionClass: 'section',
       });
     } else {
       this.setState({
         open: true,
+        arrowClass: 'arrow up',
         sectionClass: 'section open',
       });
     }
@@ -34,6 +37,7 @@ class MenuItem extends Component {
         <li className="menu-item" key={item.name}>
           <div className="menu-item-opener" onClick={() => this.handleItemClick()}>
             {item.name}
+            <i className={this.state.arrowClass} />
           </div>
           <span
             role="menuitem"
