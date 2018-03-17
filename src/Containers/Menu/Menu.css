@@ -49,6 +49,16 @@ main {
   cursor: pointer;
 }
 
+.no_selection {
+  border-radius: 2px;
+  background: none;
+  transition: 75ms all ease-out;
+}
+
+.no_selection.clicked {
+  color: rgba(62, 151, 62, 1);
+}
+
 span.no_selection {
   -webkit-user-select: none;
   -moz-user-select: none;

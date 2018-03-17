@@ -4,30 +4,42 @@ import { formatPrice } from '../../helpers';
 class MenuItem extends Component {
   state = {
     open: false,
-    class: 'section',
+    sectionClass: 'section',
+    orderClass: 'no_selection',
   };
-  handleClick = () => {
+  handleItemClick = () => {
     if (this.state.open) {
       this.setState({
         open: false,
-        class: 'section',
+        sectionClass: 'section',
       });
     } else {
       this.setState({
         open: true,
-        class: 'section open',
+        sectionClass: 'section open',
       });
     }
+  };
+  handleAddToOrderClick = item => {
+    this.props.addToOrder(item);
+    this.setState({ orderClass: 'no_selection clicked' });
+    setTimeout(() => {
+      this.setState({ orderClass: 'no_selection' });
+    }, 75);
   };
   render() {
     const { item, addToOrder } = this.props;
     return (
-      <div className={this.state.class}>
+      <div className={this.state.sectionClass}>
         <li className="menu-item" key={item.name}>
-          <div className="menu-item-opener" onClick={() => this.handleClick()}>
+          <div className="menu-item-opener" onClick={() => this.handleItemClick()}>
             {item.name}
           </div>
-          <span role="menuitem" className="no_selection" onClick={() => addToOrder(item)}>
+          <span
+            role="menuitem"
+            className={this.state.orderClass}
+            onClick={() => this.handleAddToOrderClick(item)}
+          >
             {formatPrice(item.price)} +
           </span>
         </li>
